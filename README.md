@@ -28,7 +28,7 @@ $ squeue
 `srun -N 1 --ntasks-per-node=1 --pty bash`
 
 ## Get int the container (specify the /data bind)
-singularity exec -B /data:/data /data/projects/cbio-ws/tests/containers/quay.io_h3abionet_org_h3a16s-fastqc.img bash
+`singularity exec -B /data:/data /data/projects/cbio-ws/tests/containers/quay.io_h3abionet_org_h3a16s-fastqc.img bash`
 
 ## Run command in container
 `fastqc /data/projects/cbio-ws/tests/fastq-reads/Dog1_R1.fastq -o /data/users/cbio-ws-u24/`
