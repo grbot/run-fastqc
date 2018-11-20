@@ -39,3 +39,7 @@ exit
 ls /data/users/cbio-ws-u24/Dog1_R1_fastqc.*
 /data/users/cbio-ws-u24/Dog1_R1_fastqc.html  /data/users/cbio-ws-u24/Dog1_R1_fastqc.zip
 ```
+
+### Workflow diagram
+
+![workflow](https://raw.githubusercontent.com/grbot/run-fastqc/master/run-fastqc_flowchart.png "Nextflow workflow")
