@@ -7,14 +7,13 @@ out_dir.mkdir()
 
 read_pair = Channel.fromFilePairs("${raw_reads}/*R[1,2].fastq", type: 'file')
 
-read_pair.into { read_pair_p1; read_pair_p2 }
-
 process runFastQC{
     tag { "${params.projectName}.rFQC.${sample}" }
+    cpus { 2 }
     publishDir "${out_dir}/qc/raw/${sample}", mode: 'copy', overwrite: false
 
     input:
-        set sample, file(in_fastq) from read_pair_p1
+        set sample, file(in_fastq) from read_pair
 
     output:
         file("${sample}_fastqc/*.zip") into fastqc_files
