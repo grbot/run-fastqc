@@ -21,7 +21,7 @@ process runFastQC{
     """
     mkdir ${sample}_fastqc
     fastqc --outdir ${sample}_fastqc \
-    -t ${task.cpus}
+    -t ${task.cpus} \
     ${in_fastq.get(0)} \
     ${in_fastq.get(1)}
     """
