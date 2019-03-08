@@ -5,7 +5,7 @@ out_dir = file(params.outDir)
 
 out_dir.mkdir()
 
-read_pair = Channel.fromFilePairs("${raw_reads}/*R[1,2].fastq", type: 'file')
+read_pair = Channel.fromFilePairs("${raw_reads}/*R[1,2].fastq.gz", type: 'file')
 
 process runFastQC{
     tag { "${params.projectName}.rFQC.${sample}" }
