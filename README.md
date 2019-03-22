@@ -2,6 +2,17 @@
 
 A Nextflow workflow that runs FastQC on Fastq reads and then combines them into a MultiQC report. FastQC and MutliQC are setup on a Docker container. The nextflow script pulls the Docker container and converts it to a Singularity container on the fly. See the `nextflow.log` for settings to run on a Slurm cluster.
 
+## To setup in `.bashrc`
+
+```
+# Path exports
+export PATH=$PATH:/ceph/cbio/soft/jdk-11.0.2/bin:/ceph/cbio/soft/nextflow/
+
+# Environmental variable exports
+export JAVA_CMD=/ceph/cbio/soft/jdk-11.0.2/bin/java
+export JAVA_HOME=/ceph/cbio/soft/jdk-11.0.2
+```
+
 ## To run
 
 `nextflow -log nextflow.log run -w /ceph/cbio/users/gerrit/scratch/16s/nextflow-workdir -c nextflow.config main.nf -profile slurm` 
