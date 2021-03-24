@@ -6,11 +6,11 @@ A Nextflow workflow that runs FastQC on Fastq reads and then combines them into 
 
 ```
 # Path exports
-export PATH=$PATH:/ceph/cbio/soft/jdk-11.0.2/bin:/ceph/cbio/soft/nextflow/
+export PATH=$PATH:/cbio/soft/jdk-11.0.2/bin:/cbio/soft/nextflow/
 
 # Environmental variable exports
-export JAVA_CMD=/ceph/cbio/soft/jdk-11.0.2/bin/java
-export JAVA_HOME=/ceph/cbio/soft/jdk-11.0.2
+export JAVA_CMD=/cbio/soft/jdk-11.0.2/bin/java
+export JAVA_HOME=/cbio/soft/jdk-11.0.2
 ```
 
 ## To run
