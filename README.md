@@ -4,7 +4,7 @@ A Nextflow workflow that runs FastQC on Fastq reads and then combines them into 
 
 ## To run
 
- `NXF_VER=21.10.6 nextflow run main.nf -c nextflow.config -w /home/test01/nextflow-work -profile standard -with-trace -with-report -with-timeline` 
+ `NXF_VER=21.10.6 nextflow run main.nf -c nextflow.config -w /home/manager/nextflow-work -profile standard -with-trace -with-report -with-timeline` 
 
 ## Workflow diagram
 
